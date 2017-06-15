@@ -1,0 +1,134 @@
+#!/bin/bash
+
+#Shell para buscar paquetes
+
+### Todo lo relacionado con el mail
+
+#smtp
+rpm -qa | grep -i smtp
+
+#sendmail
+echo -Sendmail:
+rpm -qa | grep -i sendmail
+echo ----------------
+
+### FTp, telnet, rdate, rsh, talk, finger, etc
+
+#ftp
+rpm -qa | grep -i ftp
+
+#telnet
+rpm -qa | grep -i telnet
+
+#rdate
+rpm -qa | grep -i rdate
+
+#rlogin
+rpm -qa | grep -i rlogin
+
+#rsh
+rpm -qa | grep -i rsh
+
+#talk
+rpm -qa | grep -i talk
+
+#finger
+rpm -qa | grep -i finger
+
+#rsync
+rpm -qa | grep -i rsync
+
+### Lo relacionado con Samba
+
+#samba
+rpm -qa | grep -i samba
+
+### Java de Linux, gcj, jakarta
+
+#gcj
+rpm -qa | grep -i gcj
+
+#jakarta
+rpm -qa | grep -i jakarta
+
+### Nfs, Isdn, nis, ypbind, rpc
+
+#NFS
+rpm -qa | grep -i nfs
+
+#ISDN
+rpm -qa | grep -i isdn
+
+#NIS
+echo -NIS:
+rpm -qa | grep -i nis
+echo ----------------
+
+#ypbind
+rpm -qa | grep -i ypbind
+
+#RPC
+echo -RPCs:
+rpm -qa | grep -i rpc
+echo ----------------
+
+#vino
+rpm -qa | grep -i vino
+
+#vinager
+rpm -qa | grep -i vinagre
+
+#sudo
+echo -Sudo:
+rpm -qa | grep -i sudo
+echo ----------------
+
+#cups
+echo -Cups:
+rpm -qa | grep -i cups
+echo ----------------
+
+#openconnect
+rpm -qa | grep -i openconnect
+
+#vpn
+rpm -qa | grep -i vpn
+
+#pptp
+rpm -qa | grep -i pptp
+
+#raid
+rpm -qa | grep -i raid
+
+#torrent
+rpm -qa | grep -i torrent
+
+#transmission
+rpm -qa | grep -i transmission
+
+#msn
+rpm -qa | grep -i msn
+
+#msn
+rpm -qa | grep -i messenger
+
+#empathy
+rpm -qa | grep -i empathy
+
+#evolution
+rpm -qa | grep -i evolution
+
+#packagekit
+echo -PackageKit:
+rpm -qa | grep -i packagekit
+echo ----------------
+
+### Bluetooth
+
+#bluetooth
+echo -Bluetoth:
+rpm -qa | grep -i bluetooth
+echo ----------------
+
+### Servidores
+rpm -qa | grep -i news

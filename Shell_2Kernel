@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Ejecuta el comando disk usage, -k(kilobytes), en el kernel que tengo
+#Tan solo se imprime la primer columna 
+du -k /boot/vmlinuz-3.7.3-101.fc17.x86_64 | awk '{print $1}' >> /tmp/backup 

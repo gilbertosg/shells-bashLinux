@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Imprime los .ko sin su extension
+
+#Se enlistan los modulos relacionados con IPv6, se imprime sólo la primer column#a, y se le pasa a un comando tr (translate) que traduce el .ko a un espacio
+
+ls /lib/modules/3.7.3-101.fc17.x86_64/kernel/net/ipv6 | awk '{ print $1}' |tr ".ko" " " >> /tmp/backup
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##Este shell muestra que el bluetoth a está en la blacklist
+
+cat /etc/modprobe.d/blacklist.conf
+
+systemctl --all --no-pager | grep -i bluetooth

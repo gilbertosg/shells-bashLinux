@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Mac ADdress de los access points
+
+#escanea y se lo pasa al archivo escaneo
+iwlist wlan0 scan > escaneo
+
+#Donde esta la palabra Address, imprime la columna 5, sin saltarse de renglón y 
+#con separador de dos puntos
+awk /'Address:/ {printf("%s:", $5)}' escaneo >> /tmp/backup
+

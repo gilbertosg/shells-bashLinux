@@ -1,0 +1,8 @@
+#!/bin/ksh
+
+#Servicios activos
+lssrc -a | awk '/active/ {print $1}'
+#Imprime unicamente los números de procesos de root
+ps -fea | awk '/root/ {print $2}'
+#Imprime la version de AIX
+uname -a | awk '{print $4 "." $3}'

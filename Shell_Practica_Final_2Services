@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Inicia el primer servidor web, puerto 80
+service httpd start
+
+#Inicia el segundo servidor web, compilado a mano, puerto 8080
+/usr/local/bin/apachectl start
+
+#Inica el servicio del secure secure shell
+service sshd start
+
+#Inicia el servicio de mysql
+service mysqld start
+
+nmap -sT -sU localhost
+
+echo " "
+echo --------------------------
+echo " "
+cat /etc/sysconfig/iptables

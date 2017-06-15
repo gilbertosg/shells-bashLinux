@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Shell 1 en bass (User IDs)
+
+#El delimitador son dos puntos. Imprime la columna 3 del archivo /etc/passwd
+# El parámetro -n hace que no se salte línea al imprimir
+awk -F':' -n  '{printf("%s ", $3) }' /etc/passwd >> /tmp/backup
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#Compilar
+
+#En C
+echo --------------------------------
+echo Programa en C: 
+echo --------------------------------
+gcc HolaMundo.c
+./a.out
+
+echo ---------------------------------
+
+#En Java
+echo Programa en C++: 
+echo ---------------------------------
+javac practica.java
+java Nombre
+
+echo ---------------------------------
+
+#En C++
+echo Programa en Java:
+echo ---------------------------------
+g++ tareaPame2.cpp
+./a.out
+

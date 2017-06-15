@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo Particiones Primarias: 
+
+echo -n 'Raíz(/): '
+df -h | awk '/sda4/{print $2}'
+
+echo -n 'Memoria Swap: '
+cat /proc/meminfo | awk '/SwapTotal:/ { print $2/1048576 " GB"}'
+
